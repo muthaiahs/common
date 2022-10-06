@@ -1,0 +1,40 @@
+User Booking policy : 
+
+id
+userId 
+itemNeedStatus -->  Map<itemId , NeedStatus > itemNeedStatusForInvoice   
+itemBookingCriteria   
+		user can set rules for item for Availability , type , brand , pricing , quality , itemNeedStatus 
+		NeedStatus can be mandatory , Optional  or rules set for each item
+preferredFulfilmentDateTime
+preferredbookingPolicy --> Availability , pricing , NeedStatus , quality ,  LM preferred policy 
+preferredPaymentStrategy 
+
+
+User Invoice Agreement : 
+
+id
+userId
+preferredVendorsForInvoice --> Map<itemId , Collection<VendorId> > preferredVendorsListForItem
+
+policyIdsForInvoice --> Collection<PolicyIds> policyIdsForInvoice
+	user will have to merge the policy manually for current invoice if same items are set in diff policy
+	
+itemNeedStatusForInvoice -->  Map<itemId , NeedStatus > itemNeedStatusForInvoice  
+	user will have to merge the itemNeedStatus manually  for current invoice 
+	NeedStatus can be mandatory , Optional  or rules set for each invoice
+	
+preferreditemBookingCriteria 
+	user can set rules for item bookings for Availability , type , brand , pricing , quality , itemNeedStatus 
+	NeedStatus can be mandatory , Optional  or rules set for each item
+	
+preferredFulfilmentDateTimeForInvoice
+	user will have to merge the preferredFulfilmentDateTime manually  for current invoice
+	
+preferredbookingPolicyForInvoice
+	user will have to merge the preferredbookingPolicy manually  for current invoice
+	
+preferredPaymentStrategyForInvoice
+	user will have to merge the preferredPaymentStrategy manually  for current invoice 
+	
+	

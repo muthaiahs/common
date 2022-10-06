@@ -1,0 +1,22 @@
+Users
+	Customer 
+	Vendor
+	Stockists
+UserDetails	
+UserProfile
+Product 
+	Product Metadata	
+	Product Categories
+Item
+Invoice
+BillOrder
+StockDetails
+	VendorStockDetails
+	StockistsDetails
+PurchaseOrder
+PurchaseDistribution
+PurchaseDistributionCriteria
+ShipmentDetails
+
+
+	

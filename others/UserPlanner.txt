@@ -1,0 +1,7 @@
+UserPlanner
+
+id
+userId
+UserDetails
+dealsForUser
+

@@ -1,0 +1,30 @@
+Stock Distillation Statement : 
+
+Stock Booking Strategy -  The model can represent user details  /  priorities and vendor booking strategies and balance these based on flexible policies. 
+User can submit bookings using different protocols and policy for each item - so multiple policy / booking strategies should be  available  for each user and they can combine strategies for each invoice billings or to schedule the Booking based on User policy . 
+
+
+
+User Purchase history -  The model of a user should have association that LM is striving to develop with repeat customers. Therefore, it should represent the history of the user in useful condensed form, participation in special programs / deals , affiliation with strategic corporate clients - for payment strategies also.
+User purchase history will be used to predict the behaviour and needs of the user .   
+User will be able to see the purchase history at item level .    
+ 
+User login and Dashboard -  Different roles of different users (such as User, agent, Vendors , support) are represented to enrich the model  association and  feed necessary information to the security framework.  A security framework will authenticate a user's identity and then limit access to specific features based on privileges assigned to defined user roles. 
+
+
+
+Vendors / agent should be able to associate with LM similar to User but can only fulfil within the allocated zone as per Stockists constraints approved by LM . Vendors should be able to update the price and availability any time ( but mostly this needs to be updated daily ) and this updated price should be available in the dashboard in near RT.  
+
+
+
+Stock Booking / Fulfilment Strategy -  The domain model will have to account for every stock items and also represent the status of stock materials and items within each vendor levels  associated in such a way that necessary audit trails can be provided and automated product routing can be supported.     The model will not include the human resources required in the process, but must allow selective process automation . 
+User can select dateTime of Fulfilment or schedule a fixed dateTime and can also update this before 5 days before the dateTime set before . 
+The items (  using UniqueProductIdentifier  UPI  )  will be added to the LM inventory before it is approved for dispatch to fulfil the Invoice created for a customer . The UPIs will be used to lookup any product sent from LM any time . 
+The UPIs should be agreed by the vendors / agent / sellers . 
+
+
+Stock Fulfilment Status -   The representation of the state of the Booking should be comprehensible to human managers, to give them deeper insight and support better decision making. 
+
+
+
+

@@ -1,0 +1,27 @@
+
+
+InvoiceFulfilmentAgreement
+
+id
+userId
+invoiceId
+InvoiceAgreement
+invoiceFulfilmentCompanyIds --> Collection<invoiceFulfilmentCompanyId> invoiceFulfilmentCompanyIds
+	invoiceFulfilmentCompanyId
+	companyName
+	companyLocation
+	companyType	
+	items
+	
+		
+
+InvoiceAgreement
+
+id
+userId
+invoiceId
+invoiceFulfilmentdate
+invoicebookingPolicy
+invoicePaymentStrategy
+
+

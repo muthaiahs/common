@@ -1,0 +1,31 @@
+
+
+
+
+A sample data set has been provided, which is some sort of pricing data. The data contains partially garbled text, purely because it's sample data. There are about 300K records which contain pricing information about the random products. It contains the columns for ID, Title, Store, Price, Category and Sub Category. The store column contains either "My Store" or a particular "Competitor".
+
+Along with this, a visualization has also been provided, that aggregates this data based on Categories and Competitors. The number in the box represents the average price difference between "My Store" and that "Competitors" for the specific products in that Category.
+ 
+The challenge contains 3 parts:
+
+Ingestion of Data
+The csv file will be dropped in a particular folder. Create a process that will ingest that information into a database of your choice. Based on the information that needs to be visualized, please create any derived tables that might be required to aggregate the data. Script this in a way so that it can be automated.
+ 
+Service
+Create a service as a wrapper, so that it can be served through restful endpoints to any tool that will need to consume this data for visualization.
+ 
+Visualization
+Build a simple web app that can consume this data and showcase the visual as seen below. Optionally, if you're unable to exactly construct the same visual, please provide a tabular format of the aggregated data.
+
+In the visualization, the color coding is based on the average price difference, which is explained below. If that is taking time, a simpler alternative is to show the difference in brackets along with the value itself. For eg. $24.34 (-$2.55).
+
+CI & CD
+Please have a few simple tests and integrate it with a CI tool of your choice.
+
+Delivery of Solution
+Please host the service and db in a location of your choice.
+Please use a source control such as git to share your code.
+Include build and deployment script.
+
+Also, please share your thoughts on the following
+If given more time, what development practices would you have followed to ensure that enhancements added to this feature do not break already existing functionality? Please elaborate on at least couple of them.

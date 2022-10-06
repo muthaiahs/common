@@ -1,0 +1,56 @@
+User
+
+userId
+UserType
+	Vendor
+		vendorId
+		companyName
+		companyLocation
+		companyType		
+	Customer
+		customerId
+		firstName
+		lastName
+		fullName
+		customerType
+	Stockists
+		stockistId
+		companyName
+		companyLocation
+		companyType	
+		items
+	Support
+		id
+		firstName
+		lastName
+		fullName
+		userCategory
+		
+UserDetails
+	id
+	UserPurchaseHistory
+		id
+		invoiceId
+	UserTransactions
+	PayBalance
+	PayBalanceHistory
+	UserPolicy  --> Collection<PolicyIds> policyIdsForInvoice  
+		id
+		preferredFulfilmentDateTime
+		preferredbookingPolicy
+		preferredPaymentStrategy
+		
+	dealsForUser
+	
+ContactDetails
+	contactNum
+	Address
+		placeNum
+		streetName
+		areaName
+		zipcode
+		City
+		State
+		Country
+	
+

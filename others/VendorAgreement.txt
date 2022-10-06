@@ -1,0 +1,46 @@
+VendorAgreement
+
+
+id
+vendorId
+numOfItems
+VendorItemAgreement --> Collection<VendorItemAgreementId> 
+vendorAgreement_asOfDate
+vendorAgreement_startDate
+vendorAgreement_endDate
+VendorFulfilmentAgreement
+vendorAgreement_descr
+
+VendorAgreementHistory
+	id
+	vendorId
+	asOfDate	
+	vendorAgreement_descr
+	VendorAgreementAuditTrail
+	numOfItems
+	items
+			
+VendorItemAgreement
+	id
+	itemId
+	vendorId
+	asOfDate
+	item_qty
+	item_packaging_type
+	item_pricing_range
+	item_pricing
+	
+	
+VendorItemAgreementHistory
+	id
+	itemId
+	vendorId
+	asOfDate	
+	vendorItemAgreement_descr
+	VendorItemAgreementAuditTrail
+	item_qty
+	item_packaging_type
+	item_pricing_range
+	item_pricing
+	
+	

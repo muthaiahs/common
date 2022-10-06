@@ -1,0 +1,9 @@
+
+
+Commands in stock  : 
+
+
+updateBookingRequest 
+cancelBookingRequest
+fulfilmentRequest
+fulfilmentStatus

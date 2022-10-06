@@ -1,0 +1,15 @@
+InvoiceAgreement
+
+id
+userId
+invoiceId
+invoiceFulfilmentdate
+invoicebookingPolicy
+invoicePaymentStrategy
+
+
+
+
+
+
+

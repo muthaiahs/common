@@ -1,0 +1,81 @@
+Invoice
+
+id
+userId
+invoiceDate
+totalAmount
+items --> Collection<ItemId> itemIds
+invoiceClosedDate
+InvoiceAuditTrail
+DealsForInvoice
+TaxDetails
+	invoiceTaxType
+	totalTax
+	totalTaxAmount
+
+
+
+Item 
+
+item_identifiers --> ItemId  
+	itemCode --> GTIN - UIC or UPC ,  MPN , SKUs
+		MPN --> Manufacturer Part Number 
+		SKUs   
+title	
+ItemCategory
+	ItemPrimaryCategory
+	ItemSubCategoryLevels
+	ItemCurrentCategoryLevel
+ItemComposition
+item_brand
+item_brand_Manufacturer
+DealsForItembrand
+item_attributes
+	item_overall_dimensions
+		weight
+		size
+		dimensions
+		color
+	item_purchase_decision_support_attibutes
+		ItemClassification
+		capacity		
+		make_date
+		sellby_date	
+		maketype		
+		packaging_type	
+		DealsForItem
+	item_other_attibutes
+		PriceHistory
+			asOfDate
+			price
+			currency
+			pricing_descr
+		itemStream
+description
+pricing_range
+ProductType
+	consumable
+	essentials
+variants
+total_variants
+variant_attributes
+	item_variant_dimensions
+		weight
+		size
+		dimensions
+		color
+		capacity
+		ItemClassification
+		packaging_type
+		maketype
+price
+currency
+
+
+
+
+	
+ 
+
+
+

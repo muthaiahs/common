@@ -1,0 +1,34 @@
+Product 
+
+title
+productBrand
+size
+numOfStores
+priceRange
+ProductCategory
+	ProductPrimaryCategory
+	ProductSubCategoryLevels
+	ProductCategoryLevel
+ProductClassification
+ProductComposition
+UPC
+SKUs
+PriceHistory
+productType
+variants
+MPN
+
+
+
+Item 
+
+weight
+size
+dimensions
+color
+description
+maketype
+composition
+packaging
+pricing 
+

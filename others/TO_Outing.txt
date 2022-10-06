@@ -1,0 +1,87 @@
+Users
+	induvidual 
+	Vendor
+	Corporate 
+UserDetails	
+UserProfile
+PoI 
+	PoI Metadata	
+	PoI Categories
+TO_Outing
+	TO_Event
+Invoice
+BillOrder
+VendorStockDetails
+PurchaseOrder
+PurchaseDistribution
+PurchaseDistributionCriteria
+ShipmentDetails
+
+
+TO_Outing 
+=========
+
+TO_OutingId
+	id
+	userId / SPOC
+	purchaseDateTime
+title
+Collection<TO_Event> events 
+num_of_members 
+price
+TO_OutingCategory
+	ProductPrimaryCategory
+	ProductSubCategoryLevels
+	ProductCategoryLevel
+TO_OutingClassification
+status
+UPC
+SKUs
+PriceHistory
+productType
+variants
+MPN
+
+
+
+TO_Event     
+=========
+
+TO_EventId
+	id
+	TO_OutingId
+	eventDateTime	
+title	
+num_of_members
+Collection<Users> users 
+Region
+StockDetails
+	eventDateTime
+description
+status
+maketype
+composition
+TO_EventCategory
+	TO_EventPrimaryCategory
+	TO_EventSubCategoryLevels
+	TO_EventCategoryLevel
+pricing 
+
+Invoice
+=========
+id
+userId
+invoiceDate
+totalAmount
+Collection<TO_Event> events 
+invoiceClosedDate
+InvoiceAuditTrail
+DealsForInvoice
+TaxDetails
+	invoiceTaxType
+	totalTax
+	totalTaxAmount
+
+
+	
+	

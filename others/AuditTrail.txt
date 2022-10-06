@@ -1,0 +1,19 @@
+AuditTrail
+
+id
+startDateTime 
+closedDateTime 
+startedByUser		
+		userId
+		firstName
+		lastName
+		fullName
+		userCategory
+closedByUser
+		customerId
+		firstName
+		lastName
+		fullName
+		customerType	
+lastUpdateDateTime
+lastUpdatedByUser
